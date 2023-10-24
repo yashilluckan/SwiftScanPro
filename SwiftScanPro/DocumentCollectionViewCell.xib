@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DocumentCollectionViewCell" id="gTV-IL-0wX" customClass="DocumentCollectionViewCell" customModule="SwiftScanPro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="162" height="282"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="162" height="282"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="docName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZUe-wi-tYC">
+                        <rect key="frame" x="44" y="241" width="74" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XN6-GD-zVW">
+                        <rect key="frame" x="0.0" y="0.0" width="162" height="226"/>
+                    </imageView>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bNp-1x-Kib">
+                        <rect key="frame" x="129" y="0.99999999999999645" width="33" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="33" id="77x-Nr-g5b"/>
+                            <constraint firstAttribute="height" constant="34.333333333333329" id="bg2-FP-tzD"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZUe-wi-tYC" secondAttribute="bottom" constant="20" id="1Tb-yc-5EF"/>
+                <constraint firstItem="ZUe-wi-tYC" firstAttribute="top" secondItem="XN6-GD-zVW" secondAttribute="bottom" constant="15" id="69l-wU-8RZ"/>
+                <constraint firstItem="XN6-GD-zVW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PAz-8d-DvN"/>
+                <constraint firstItem="ZUe-wi-tYC" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="UsC-xH-roj"/>
+                <constraint firstItem="bNp-1x-Kib" firstAttribute="trailing" secondItem="XN6-GD-zVW" secondAttribute="trailing" id="bEE-Aa-NhJ"/>
+                <constraint firstItem="ZUe-wi-tYC" firstAttribute="centerX" secondItem="XN6-GD-zVW" secondAttribute="centerX" id="hH0-pW-eUQ"/>
+                <constraint firstItem="bNp-1x-Kib" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1.7763568394002505e-15" id="jki-aa-bhz"/>
+                <constraint firstItem="XN6-GD-zVW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="l0b-aX-tkv"/>
+            </constraints>
+            <size key="customSize" width="162" height="282"/>
+            <connections>
+                <outlet property="checkmarkImageView" destination="bNp-1x-Kib" id="Pqf-US-KHM"/>
+                <outlet property="docName" destination="ZUe-wi-tYC" id="xpu-4L-pRi"/>
+                <outlet property="imageView" destination="XN6-GD-zVW" id="jT6-kX-YDC"/>
+            </connections>
+            <point key="canvasLocation" x="224.42748091603053" y="101.40845070422536"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
+    </resources>
+</document>

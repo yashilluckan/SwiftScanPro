@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "E26EFEA5-724C-4F23-BDB0-2AFA4523E41D",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SwiftScanPro.xcodeproj",
+        "identifier" : "E2B46A0D2AD58C04007C154B",
+        "name" : "SwiftScanProUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
